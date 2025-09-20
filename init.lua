@@ -22,4 +22,3 @@ vim.g.maplocalleader = "\\"
 -- Load options and plugins
 require("vim-options")
 require("lazy").setup("plugins")
-require("my_lsp_hover")
