@@ -22,5 +22,3 @@ nvim
 ## Fair Warning
 
 This is my personal config, so know that it will change as I continue to learn and try new things. Feel free to fork it, modify it, or use it as inspiration for your own setup. No guarantees, but it works for me most of the time.
-
----
