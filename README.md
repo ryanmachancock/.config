@@ -1,5 +1,5 @@
 # 🌊 My Neovim Config
-Here's an nvim setup from someone still learning the ropes. Still figuring things out, but hey, we all start somewhere.
+Here's an nvim setup from someone still learning the ropes. Gotta start somewhere right?
 
 Take what you like, leave what you don't. No stress.
 
