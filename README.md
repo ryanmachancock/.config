@@ -1,7 +1,5 @@
 # 🌊 My Neovim Config
-Here's an nvim setup from someone still learning the ropes. Gotta start somewhere right?
-
-Take what you like, leave what you don't. No stress.
+Learning vim motions and nvim because it looks cool and I want to be cool
 
 ## What's Inside?
 
