@@ -61,8 +61,6 @@ return {
         automatic_installation = true,
       })
 
-      local lspconfig = require("lspconfig")
-
       -- Common on_attach
       local on_attach = function(client, bufnr)
         local opts = { buffer = bufnr, silent = true }
@@ -72,14 +70,14 @@ return {
         vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
       end
 
-      -- Servers
-      lspconfig.lua_ls.setup({ on_attach = on_attach })
-      lspconfig.ts_ls.setup({ on_attach = on_attach })
-      lspconfig.jdtls.setup({ on_attach = on_attach })
-      lspconfig.lemminx.setup({ on_attach = on_attach })
-      lspconfig.jsonls.setup({ on_attach = on_attach })
-      lspconfig.yamlls.setup({ on_attach = on_attach })
-      lspconfig.bashls.setup({ on_attach = on_attach })
+      -- Use new vim.lsp.config API (nvim 0.11+)
+      vim.lsp.config('lua_ls', { on_attach = on_attach })
+      vim.lsp.config('ts_ls', { on_attach = on_attach })
+      vim.lsp.config('jdtls', { on_attach = on_attach })
+      vim.lsp.config('lemminx', { on_attach = on_attach })
+      vim.lsp.config('jsonls', { on_attach = on_attach })
+      vim.lsp.config('yamlls', { on_attach = on_attach })
+      vim.lsp.config('bashls', { on_attach = on_attach })
     end,
   },
 }
